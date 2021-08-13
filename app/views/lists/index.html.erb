@@ -3,7 +3,7 @@
   <div class="cards">
     <% @lists.each do |list| %>
       <%= link_to(list_path(list), {class: "no-text-decoration"}) do %>
-        <div class="card-category mb-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= list.photo.attached? ? cl_image_path(list.photo.key) : image_path('pexels-cottonbro-3945317.jpg') %>)">
+        <div class="card-category grow mb-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= list.photo.attached? ? cl_image_path(list.photo.key) : image_path('pexels-cottonbro-3945317.jpg') %>)">
           <%= list.name %>
         </div>
       <% end %>

@@ -3,7 +3,7 @@
   <%= simple_form_for [@list] do |f| %>
     <%= f.input :name %>
     <%= f.input :photo, as: :file %>
-    <%= f.submit "Create List", class: "btn btn-primary mb-3" %>
+    <%= f.submit "Create", class: "btn draw-border my-3" %>
   <% end %>
-  <%= link_to "Go back", lists_path, {class: "no-text-decoration mt-3"} %>
+  <%= link_to "Go back", lists_path, class: "no-text-decoration mt-3" %>
 </div>
