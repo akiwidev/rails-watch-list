@@ -1,5 +1,5 @@
 <div class="container mt-3">
-  <div class="card-category mb-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @list.photo.attached? ? cl_image_path(@list.photo.key) : image_path('app/assets/images/pexels-cottonbro-3945317.jpg') %>)">
+  <div class="card-category mb-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @list.photo.attached? ? cl_image_path(@list.photo.key) : image_path('pexels-cottonbro-3945317.jpg') %>)">
     <%= @list.name %>
   </div>
   <% @list.bookmarks.each do |bookmark|%>
