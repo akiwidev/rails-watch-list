@@ -5,5 +5,5 @@
     <%= f.input :photo, as: :file %>
     <%= f.submit "Create List", class: "btn btn-primary mb-3" %>
   <% end %>
-  <p><%= link_to "Go back", lists_path %></p>
+  <%= link_to "Go back", lists_path, {class: "no-text-decoration mt-3"} %>
 </div>
